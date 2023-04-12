@@ -5,7 +5,7 @@ let oneEuroIs = {
 }
 
 const fromDollarToYen = function(valueInDollar){
-    let valueInYen = valueInDollar/oneEuroIs.USD * oneEuroIs.JPY;
+    let valueInYen = valueInDollar * oneEuroIs.JPY;
     return valueInYen;
 }
 
@@ -15,7 +15,7 @@ const fromEuroToDollar = function(valueInEuro){
 }
 
 const fromYenToPound = function(valueInYen){
-    let valueInPound = valueInYen/oneEuroIs.JPY * oneEuroIs.GBP;
+    let valueInPound = valueInYen * oneEuroIs.GBP;
     return valueInPound;
 }
 
